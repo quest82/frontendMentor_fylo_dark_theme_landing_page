@@ -1,4 +1,48 @@
 /* 
+VARIABLES
+*/
+:root {
+	--clr-bg-navy-intro_email: hsl(217, 28%, 15%);
+	--clr-bg-navy-main: hsl(218, 28%, 13%);
+	--clr-bg-navy-footer: hsl(216, 53%, 9%);
+	--clr-bg-navy-testimonial: hsl(219, 30%, 18%);
+	--clr-bg-tealg-btn: hsl(176, 68%, 64%);
+	--clr-bg-cyang-btn: hsl(198, 60%, 50%);
+	--clr-txt-red-error: hsl(0, 100%, 63%);
+	--clr-txt-white: hsl(0, 0%, 100%);
+	--fnt-wght-normal: 400;
+	--fnt-wght-bold: 700;
+	--fnt-fam-head_cta_nav: "Raleway";
+	--fnt-fam-body: "Open Sans";
+}
+
+/* 
+FONT IMPORT
+*/
+
+/* Raleway */
+
+@font-face {
+	font-family: "Raleway";
+	src: url(./fylo_dark_theme_landing_page/fonts/Raleway_variable/Raleway-VariableFont_wght.ttf)
+		format("truetype-variations");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 1 999;
+}
+
+/* Open Sans */
+
+@font-face {
+	font-family: "Open Sans";
+	src: url(./fylo_dark_theme_landing_page/fonts/Open_Sans_variable/OpenSans-VariableFont_wdth\wght.ttf)
+		format("truetype-variations");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 1 999;
+}
+
+/* 
 CSS RESET
  */
 
@@ -10,9 +54,9 @@ CSS RESET
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding:0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -21,8 +65,8 @@ CSS RESET
   4. Improve text rendering
 */
 body {
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -33,8 +77,8 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 /*
@@ -44,7 +88,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 /*
@@ -57,7 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 /*
@@ -67,19 +111,150 @@ h6 {
 a,
 a:visited,
 a:active {
-  text-decoration: none;}
+	text-decoration: none;
+}
 
 /* 
 GENERAL
 */
 
 body {
-    background-color: hsl(218, 28%, 13%);
-    color: white;
+	font-size: 0.875rem;
+	background-color: var(--clr-bg-navy-main);
+	color: var(--clr-txt-white);
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 1.4em;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
 }
 
 /* 
 MOBILE
 */
 
-/* Layout */
+/* layout */
+
+/* ------ layout nav ------ */
+
+.header {
+	padding-top: 1.7em;
+	width: 100%;
+	margin-bottom: 3.5em;
+}
+
+.header--flex {
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header__nav__list__item {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 1em;
+}
+
+/* ------ layout main ------ */
+
+.main__intro {
+	padding: 0 1em;
+	margin-bottom: 9em;
+}
+
+.main__intro__illustration {
+	order: -1;
+	margin-bottom: 2em;
+}
+
+.main__intro__title {
+	margin-bottom: 0.8em;
+}
+
+.main__intro__copy {
+	margin-bottom: 2.1em;
+}
+
+.main__features__item {
+  margin-bottom: 5em;
+  padding: 0 1.3em;
+}
+
+.main__features__item__title {
+  margin-bottom: .3em;
+}
+
+/* -------------------------------------------------- */
+/* typo */
+
+.header__nav__list__item a,
+h1,
+h2,
+button,
+input[type="submit"] {
+	font-family: var(--fnt-fam-head_cta_nav);
+}
+
+p {
+	font-family: var(--fnt-fam-body);
+}
+
+/* ------ typo nav ------ */
+
+.header__nav__list__item a {
+	color: var(--clr-txt-white);
+	font-weight: var(--fnt-wght-normal);
+}
+
+/* ------ typo main ------ */
+
+.main__intro,
+.main__features {
+	text-align: center;
+}
+
+.main__intro__title {
+	font-size: 1.9rem;
+	line-height: 1.5;
+}
+
+.main__features__item__title {
+  font-size: 1.18rem;
+}
+
+/* -------------------------------------------------- */
+/* assets */
+
+.header__logo {
+	width: 100px;
+}
+
+button,
+input[type="submit"] {
+	background-image: linear-gradient(
+		157deg,
+		var(--clr-bg-tealg-btn) 13%,
+		var(--clr-bg-cyang-btn) 40%
+	);
+	border: none;
+	border-radius: 30px;
+	font-weight: 700;
+  color: var(--clr-txt-white);
+}
+
+.btn {
+	width: 220px;
+	padding: 0.7em;
+  align-self: center;
+}
+
+.main__features__item__img {
+  width: 60px;
+  align-self: center;
+  margin-bottom: 2em;
+}
