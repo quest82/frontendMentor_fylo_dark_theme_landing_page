@@ -119,7 +119,7 @@ GENERAL
 */
 
 body {
-	font-size: 0.875rem;
+	font-size: 0.88rem;
 	background-color: var(--clr-bg-navy-main);
 	color: var(--clr-txt-white);
 }
@@ -162,12 +162,17 @@ MOBILE
 
 /* ------ layout main ------ */
 
+.main {
+	position: relative;
+}
+
 .main__intro {
 	padding: 0 1em;
 	margin-bottom: 9em;
 }
 
-.main__intro__illustration {
+.main__intro__illustration,
+.main__sellingPoint__illustration {
 	order: -1;
 	margin-bottom: 2em;
 }
@@ -180,13 +185,120 @@ MOBILE
 	margin-bottom: 2.1em;
 }
 
+.main__features {
+	margin-bottom: 10em;
+}
+
 .main__features__item {
-  margin-bottom: 5em;
-  padding: 0 1.3em;
+	margin-bottom: 5em;
+	padding: 0 1.3em;
 }
 
 .main__features__item__title {
-  margin-bottom: .3em;
+	margin-bottom: 0.3em;
+}
+
+.main__sellingPoint {
+	margin-bottom: 8em;
+}
+
+.main__sellingPoint__illustration {
+	margin-bottom: 3em;
+}
+
+.main__sellingPoint__copy__title {
+	margin-bottom: 0.6em;
+}
+
+.main__sellingPoint__copy__description {
+	margin-bottom: 1em;
+}
+
+.main__testimonials {
+	padding: 0 1.5em;
+	margin: 6em 0;
+}
+
+.main__testimonials__box {
+	background-color: var(--clr-bg-navy-testimonial);
+	margin-bottom: 2em;
+	padding: 1.5em 1.2em;
+	border-radius: 4px;
+}
+
+.main__testimonials__box__profile--flex {
+	flex-direction: row;
+	align-items: center;
+}
+
+.main__testimonials__box__comment {
+	margin-bottom: 1.4em;
+}
+
+.main__testimonials__box__profile__info {
+	margin-top: 0.4em;
+}
+
+.main__testimonials__box__profile__name {
+	margin-bottom: 0.3em;
+}
+
+.main__signUp {
+	background-color: var(--clr-bg-navy-intro_email);
+	padding: 2.5em 2em;
+	border-radius: 10px;
+	box-shadow: 8px 8px rgba(0, 0, 0, 0.176);
+	position: relative;
+	top: 13em;
+}
+
+.main__signUp__title {
+	margin-bottom: 1em;
+}
+
+.main__signUp__description {
+	margin-bottom: 2em;
+}
+
+.footer {
+	background-color: var(--clr-bg-navy-footer);
+	padding: 17em 0 2em 0;
+}
+
+.footer__contact {
+	margin-bottom: 3em;
+}
+
+.footer__location--flex,
+.footer__contact__mail--flex,
+.footer__contact__phone--flex {
+	flex-direction: row;
+	margin-bottom: 1.3em;
+}
+
+.footer__contact__mail--flex,
+.footer__contact__phone--flex {
+	align-items: center;
+}
+
+.footer__location__address {
+	margin-top: -0.4em;
+	margin-left: 1em;
+	line-height: 1.3;
+}
+
+.footer__contact__phone__number,
+.footer__contact__mail__address {
+	margin-left: 1em;
+	line-height: 1.3;
+}
+
+.footer__webLinks {
+	margin-bottom: 3em;
+}
+
+.footer__webLinks li {
+	margin-bottom: 0.6em;
 }
 
 /* -------------------------------------------------- */
@@ -219,12 +331,58 @@ p {
 }
 
 .main__intro__title {
-	font-size: 1.9rem;
+	font-size: 1.7rem;
 	line-height: 1.5;
+	font-weight: var(--fnt-wght-bold);
 }
 
-.main__features__item__title {
-  font-size: 1.18rem;
+.main__features__item__title,
+.main__sellingPoint__copy__title {
+	font-size: 1.18rem;
+}
+
+.main__sellingPoint__copy__link {
+	color: var(--clr-bg-tealg-btn);
+	border-bottom: 1px solid var(--clr-bg-tealg-btn);
+	display: inline-block;
+	position: relative;
+}
+
+.main__testimonials__box__comment,
+.main__testimonials__box__profile__info {
+	font-size: 0.7rem;
+}
+
+.main__testimonials__box__profile__name {
+	font-weight: var(--fnt-wght-bold);
+	line-height: 1;
+}
+
+.main__testimonials__box__profile__job {
+	font-size: 0.5rem;
+	letter-spacing: 1px;
+}
+
+.main__signUp {
+	text-align: center;
+}
+
+.main__signUp__title {
+	font-size: 1.2rem;
+}
+
+.footer__location__address,
+.footer__contact__phone__number,
+.footer__contact__mail__address {
+	line-height: 1.3;
+}
+
+.footer__webLinks li {
+	list-style-type: none;
+}
+
+.footer__webLinks a {
+	color: var(--clr-txt-white);
 }
 
 /* -------------------------------------------------- */
@@ -244,17 +402,51 @@ input[type="submit"] {
 	border: none;
 	border-radius: 30px;
 	font-weight: 700;
-  color: var(--clr-txt-white);
+	color: var(--clr-txt-white);
 }
 
 .btn {
 	width: 220px;
 	padding: 0.7em;
-  align-self: center;
+	align-self: center;
 }
 
 .main__features__item__img {
-  width: 60px;
-  align-self: center;
-  margin-bottom: 2em;
+	width: 60px;
+	align-self: center;
+	margin-bottom: 2em;
+}
+
+.main__sellingPoint__copy__link__arrow {
+	display: inline-block;
+	position: relative;
+	top: 4px;
+}
+
+.main__testimonials__box__profile__img {
+	width: 33px;
+	margin-right: 0.6em;
+}
+
+.main__testimonials__box__profile__img img {
+	border-radius: 50px;
+}
+
+input {
+	width: 100%;
+	border-radius: 30px;
+	padding: 0.7em 1.3em;
+}
+
+input[type="text"] {
+	margin-bottom: 1.4em;
+	border: none;
+}
+
+.footer__logo {
+	margin-bottom: 3em;
+}
+
+.footer__location__img {
+	width: 40px;
 }
