@@ -13,7 +13,7 @@ VARIABLES
 	--fnt-wght-normal: 400;
 	--fnt-wght-bold: 700;
 	--fnt-fam-head_cta_nav: "Raleway";
-	--fnt-fam-body: "Open Sans";
+	--fnt-fam-body: "Roboto";
 }
 
 /* 
@@ -34,8 +34,8 @@ FONT IMPORT
 /* Open Sans */
 
 @font-face {
-	font-family: "Open Sans";
-	src: url(./fylo_dark_theme_landing_page/fonts/Open_Sans_variable/OpenSans-VariableFont_wdth\wght.ttf)
+	font-family: "Roboto";
+	src: url(./fylo_dark_theme_landing_page/fonts/Roboto_variable/Roboto-VariableFont_wdth\,wght.ttf)
 		format("truetype-variations");
 	font-display: swap;
 	font-style: normal;
@@ -449,4 +449,29 @@ input[type="text"] {
 
 .footer__location__img {
 	width: 40px;
+}
+
+
+/* 
+TABLET (690px - 800px
+*/
+
+/* layout */
+
+/* ------ layout nav ------ */
+
+@media (min-width: 690px) {
+	
+}
+
+/* 
+DESKTOP
+*/
+
+/* layout */
+
+/* ------ layout nav ------ */
+
+@media (min-width: 50em) {
+	
 }
