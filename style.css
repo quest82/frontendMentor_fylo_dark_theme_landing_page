@@ -20,22 +20,22 @@ VARIABLES
 FONT IMPORT
 */
 
-/* Raleway */
+/* Open Sans */
 
 @font-face {
-	font-family: "Raleway";
-	src: url(./fylo_dark_theme_landing_page/fonts/Raleway_variable/Raleway-VariableFont_wght.ttf)
+	font-family: "Roboto";
+	src: url(./fylo_dark_theme_landing_page/fonts/Roboto_variable/Roboto-VariableFont.ttf)
 		format("truetype-variations");
 	font-display: swap;
 	font-style: normal;
 	font-weight: 1 999;
 }
 
-/* Open Sans */
+/* Raleway */
 
 @font-face {
-	font-family: "Roboto";
-	src: url(./fylo_dark_theme_landing_page/fonts/Roboto_variable/Roboto-VariableFont_wdth\,wght.ttf)
+	font-family: "Raleway";
+	src: url(./fylo_dark_theme_landing_page/fonts/Raleway_variable/Raleway-VariableFont_wght.ttf)
 		format("truetype-variations");
 	font-display: swap;
 	font-style: normal;
@@ -133,6 +133,10 @@ body {
 .flex {
 	display: flex;
 	flex-direction: column;
+}
+
+.grid {
+	display: grid;
 }
 
 /* 
@@ -451,7 +455,6 @@ input[type="text"] {
 	width: 40px;
 }
 
-
 /* 
 TABLET (690px - 800px
 */
@@ -460,18 +463,135 @@ TABLET (690px - 800px
 
 /* ------ layout nav ------ */
 
-@media (min-width: 690px) {
-	
+@media (min-width: 800px) {
+	/* layout */
+
+	/* ------ layout main ------ */
+
+	.header__nav__list__item {
+		margin-left: 2em;
+	}
+
+	.main__intro {
+		padding: 0 10em;
+	}
+
+	.main__intro--flex {
+		align-items: center;
+	}
 }
 
 /* 
 DESKTOP
 */
 
-/* layout */
+@media (min-width: 62.5em) {
+	/* layout */
 
-/* ------ layout nav ------ */
+	/* ------ layout main ------ */
 
-@media (min-width: 50em) {
-	
+	.main__intro {
+		padding: 0;
+		margin-bottom: 4em;
+	}
+
+	.main__intro__title {
+		width: 50%;
+	}
+
+	.main__intro__copy {
+		width: 45%;
+	}
+
+	.main__features {
+		padding: 0 6em;
+		margin-bottom: 5em;
+	}
+
+	.main__features--grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 5em;
+	}
+
+	.main__features__item {
+		margin: 0;
+	}
+
+	.main__features__item:nth-of-type(1) {
+		margin-top: 1.5em;
+	}
+
+	.main__sellingPoint {
+		padding: 0 3em;
+	}
+
+	.main__testimonials--flex,
+	.main__sellingPoint--flex {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.main__sellingPoint--flex {
+		align-items: center;
+	}
+
+	.main__sellingPoint__copy {
+		width: 45%;
+	}
+
+	.main__sellingPoint__copy__title {
+		font-size: 1.8rem;
+	}
+
+	.main__testimonials {
+		margin-bottom: -6em;
+	}
+
+	.main__testimonials__box {
+		max-width: 350px;
+		margin-left: 1em;
+	}
+
+	.main__signUp {
+		margin: 0 15em;
+		padding: 2.5em 3.5em;
+	}
+
+	.footer--grid {
+		grid-template-columns: repeat(5, 1fr);
+		column-gap: 3em;
+	}
+
+	/* -------------------------------------------------- */
+	/* typo */
+
+	.main__sellingPoint__copy__title {
+		font-size: 1.8rem;
+		width: 70%;
+	}
+
+	/* -------------------------------------------------- */
+	/* assets */
+
+	.main__intro__illustration {
+		width: 65%;
+	}
+
+	.main__sellingPoint__illustration {
+		width: 48%;
+	}
+
+	input[type="text"] {
+		margin-bottom: 0;
+		width: 60%;
+		margin-right: 1em;
+	}
+
+	input[type="submit"] {
+		width: 26%;
+	}
+
+	.footer__logo {
+		grid-column: 1/6;
+	}
 }
