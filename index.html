@@ -9,10 +9,17 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<title>
 			Frontend Mentor | Fylo landing page with dark theme and features grid
 		</title>
-		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -233,7 +240,7 @@
 			</div>
 		</main>
 
-		<footer class="footer ">
+		<footer class="footer">
 			<div class="wrapper footer--grid grid">
 				<div class="footer__logo">
 					<img
@@ -284,7 +291,11 @@
 					<li><a href="">Terms</a></li>
 					<li><a href="">Privacy</a></li>
 				</ul>
-				<div class="footer__socials"></div>
+				<div class="footer__socials footer__socials--flex flex">
+					<div class="fa__icons"><i class="fa-brands fa-facebook-f"></i></div>
+					<div class="fa__icons"><i class="fa-brands fa-x-twitter"></i></div>
+					<div class="fa__icons"><i class="fa-brands fa-instagram"></i></div>
+				</div>
 			</div>
 		</footer>
 	</body>
