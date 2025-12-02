@@ -147,7 +147,19 @@ MOBILE
 */
 
 /* layout */
+.header--flex,
+.main__testimonials__box__profile--flex,
+.footer__location--flex,
+.footer__contact__mail--flex,
+.footer__contact__phone--flex,
+.footer__socials--flex {
+	flex-direction: row;
+}
 
+.main,
+.main__signUp {
+	position: relative;
+}
 /* ------ layout nav ------ */
 
 .header {
@@ -157,7 +169,6 @@ MOBILE
 }
 
 .header--flex {
-	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -168,10 +179,6 @@ MOBILE
 }
 
 /* ------ layout main ------ */
-
-.main {
-	position: relative;
-}
 
 .main__intro {
 	padding: 0 1em;
@@ -233,11 +240,6 @@ MOBILE
 	border-radius: 4px;
 }
 
-.main__testimonials__box__profile--flex {
-	flex-direction: row;
-	align-items: center;
-}
-
 .main__testimonials__box__comment {
 	margin-bottom: 1.4em;
 }
@@ -255,7 +257,6 @@ MOBILE
 	padding: 2.5em 2em;
 	border-radius: 10px;
 	box-shadow: 8px 8px rgba(0, 0, 0, 0.176);
-	position: relative;
 	top: 13em;
 }
 
@@ -279,13 +280,7 @@ MOBILE
 .footer__location--flex,
 .footer__contact__mail--flex,
 .footer__contact__phone--flex {
-	flex-direction: row;
 	margin-bottom: 1.3em;
-}
-
-.footer__contact__mail--flex,
-.footer__contact__phone--flex {
-	align-items: center;
 }
 
 .footer__location__address {
@@ -309,7 +304,6 @@ MOBILE
 }
 
 .footer__socials--flex {
-	flex-direction: row;
 	justify-content: center;
 }
 
@@ -317,6 +311,13 @@ MOBILE
 /* typo */
 
 .header__nav__list__item a,
+h1,
+h2,
+button,
+input[type="submit"] {
+	font-family: var(--fnt-fam-head_cta_nav);
+}
+
 h1,
 h2,
 button,
@@ -345,7 +346,8 @@ input[type="submit"] {
 /* ------ typo main ------ */
 
 .main__intro,
-.main__features {
+.main__features,
+.main__signUp {
 	text-align: center;
 }
 
@@ -379,10 +381,6 @@ input[type="submit"] {
 .main__testimonials__box__profile__job {
 	font-size: 0.5rem;
 	letter-spacing: 1px;
-}
-
-.main__signUp {
-	text-align: center;
 }
 
 .main__signUp__title {
@@ -429,15 +427,18 @@ input[type="submit"]:hover {
 	background-image: linear-gradient(var(--clr-bg-tealh-btn));
 }
 
+.btn,
+.main__features__item__img {
+	align-self: center;
+}
+
 .btn {
 	width: 220px;
 	padding: 0.7em;
-	align-self: center;
 }
 
 .main__features__item__img {
 	width: 60px;
-	align-self: center;
 	margin-bottom: 2em;
 }
 
@@ -490,12 +491,8 @@ input[type="text"] {
 }
 
 /* 
-TABLET (690px - 800px
+TABLET (690px - 800px)
 */
-
-/* layout */
-
-/* ------ layout nav ------ */
 
 @media (min-width: 800px) {
 	/* layout */
