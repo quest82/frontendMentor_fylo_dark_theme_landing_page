@@ -237,7 +237,6 @@ MOBILE
 	background-size: 30px;
 	background-position: 1.7em 10.6em;
 	padding: 12em 1.5em 4em;
-
 }
 
 .main__testimonials__box {
@@ -374,6 +373,11 @@ input[type="submit"] {
 	border-bottom: 1px solid var(--clr-bg-tealg-btn);
 	display: inline-block;
 	position: relative;
+}
+
+.main__sellingPoint__copy__link:hover {
+	color: var(--clr-txt-white);
+	border-bottom: 1px solid var(--clr-txt-white);
 }
 
 .main__testimonials__box__profile__info {
