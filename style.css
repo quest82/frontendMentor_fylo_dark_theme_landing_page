@@ -2,7 +2,7 @@
 VARIABLES
 */
 :root {
-	--clr-bg-navy-intro_email: hsl(217, 28%, 15%);
+	--clr-bg-navy-intro_email: hsl(217, 27%, 15%);
 	--clr-bg-navy-main: hsl(218, 28%, 13%);
 	--clr-bg-navy-footer: hsl(216, 53%, 9%);
 	--clr-bg-navy-testimonial: hsl(219, 30%, 18%);
@@ -166,6 +166,9 @@ MOBILE
 	padding-top: 1.7em;
 	width: 100%;
 	margin-bottom: 3.5em;
+	/* background: url(./fylo_dark_theme_landing_page/images/bg-curvy-mobile.svg)
+		no-repeat bottom/contain; */
+	background-color: var(--clr-bg-navy-intro_email);
 }
 
 .header--flex {
@@ -390,11 +393,10 @@ input[type="submit"] {
 .error {
 	text-align: left;
 	margin-left: 5em;
-	margin-top: .7em;
-	font-size: .7rem;
+	margin-top: 0.7em;
+	font-size: 0.7rem;
 	color: var(--clr-txt-red-error);
 	display: none;
-
 }
 
 .footer__location__address,
@@ -527,6 +529,10 @@ DESKTOP
 */
 
 @media (min-width: 62.5em) {
+	body {
+		background-image: url(./fylo_dark_theme_landing_page/images/bg-curvy-desktop.svg);
+	}
+
 	/* layout */
 
 	/* ------ layout main ------ */
