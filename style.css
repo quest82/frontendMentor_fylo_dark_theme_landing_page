@@ -168,7 +168,7 @@ MOBILE
 	margin-bottom: 3.5em;
 	/* background: url(./fylo_dark_theme_landing_page/images/bg-curvy-mobile.svg)
 		no-repeat bottom/contain; */
-	background-color: var(--clr-bg-navy-intro_email);
+	/* background-color: var(--clr-bg-navy-intro_email); */
 }
 
 .header--flex {
@@ -215,9 +215,9 @@ MOBILE
 	margin-bottom: 0.3em;
 }
 
-.main__sellingPoint {
+/* .main__sellingPoint {
 	margin-bottom: 8em;
-}
+} */
 
 .main__sellingPoint__illustration {
 	margin-bottom: 3em;
@@ -232,8 +232,12 @@ MOBILE
 }
 
 .main__testimonials {
-	padding: 0 1.5em;
-	margin: 6em 0;
+	background-image: url(./fylo_dark_theme_landing_page/images/bg-quotes.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: 1.7em 10.6em;
+	padding: 12em 1.5em 4em;
+
 }
 
 .main__testimonials__box {
@@ -260,7 +264,7 @@ MOBILE
 	padding: 2.5em 2em;
 	border-radius: 10px;
 	box-shadow: 8px 8px rgba(0, 0, 0, 0.176);
-	top: 13em;
+	top: 10em;
 }
 
 .main__signUp__title {
@@ -529,9 +533,20 @@ DESKTOP
 */
 
 @media (min-width: 62.5em) {
-	body {
+	/* .header::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
 		background-image: url(./fylo_dark_theme_landing_page/images/bg-curvy-desktop.svg);
-	}
+		background-repeat: no-repeat;
+		transform: rotate(180deg) scale(1.2);
+		background-position: 0 13em;
+	} */
 
 	/* layout */
 
@@ -591,7 +606,7 @@ DESKTOP
 	}
 
 	.main__testimonials {
-		margin-bottom: -6em;
+		padding-bottom: -6em;
 	}
 
 	.main__testimonials__box {
